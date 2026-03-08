@@ -6,6 +6,8 @@
 🧠 **AI‑Driven Inventory Management System**
 *A modern full‑stack platform that transforms traditional inventory tracking into an intelligent decision‑support system using real‑time AI analysis.*
 
+🌐 **Live Demo:**  
+https://smartstock-ai-11u3.vercel.app
 </div>
 
 ---
