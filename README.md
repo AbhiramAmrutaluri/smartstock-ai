@@ -189,7 +189,8 @@ npm run dev
 ## 📸 Application Preview
 
 ### Login Page
-![Login](https://i.ibb.co/6PXZLDB/login.png)
+<img width="477" height="453" alt="image" src="https://github.com/user-attachments/assets/8131814d-4697-4884-a47f-db82bae65df7" />
+
 
 ### Dashboard
 ![Dashboard](https://i.ibb.co/51J6HBC/dashboard.png)
