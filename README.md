@@ -1,106 +1,233 @@
 <div align="center">
-  <img src="https://img.shields.io/badge/Status-Live-success?style=for-the-badge" alt="Status" />
-  <img src="https://img.shields.io/badge/Hackathon-Ready-blue?style=for-the-badge" alt="Hackathon" />
-  <img src="https://img.shields.io/badge/AI_Powered-Groq_Llama_3-purple?style=for-the-badge" alt="AI Engine" />
-  <br />
-  <br />
 
-  # 🌟 SmartStock AI
-  ### Enterprise Inventory Intelligence, powered by Live Llama 3.3.
-  *An advanced full-stack SaaS platform featuring role-based dashboards, automated real-time Llama 3 restock predictions, and a stunning 60fps WebGL glass-morphic interface.*
+# 🚀 SmartStock AI
+### Enterprise Inventory Intelligence Platform
 
-  <img src="./frontend/public/vite.svg" height="80" alt="Logo" />
+🧠 **AI‑Driven Inventory Management System**
+*A modern full‑stack platform that transforms traditional inventory tracking into an intelligent decision‑support system using real‑time AI analysis.*
+
 </div>
 
 ---
 
 ## 🏆 Project Overview
+SmartStock AI is not just a product database or CRUD inventory application.
 
-**SmartStock AI** isn't just a database GUI—it is a proactive, cognitive system. Designed for the modern enterprise floor, this application bridges the gap between chaotic warehouse management and precise, AI-driven foresight. 
+It is a cognitive inventory intelligence platform that combines:
 
-Instead of waiting for stock to hit zero, **SmartStock AI analyzes live velocity and autonomously calculates mathematically optimal restock thresholds using the Groq Llama-3.3-70b LLM API.**
+- 📦 **Inventory management**
+- 🤖 **AI‑powered analytics**
+- 👥 **Role‑based workflow**
+- 📊 **Real‑time operational insights**
 
-From the gorgeous, hardware-accelerated fluid WebGL UI to the deep Role-Based Access controls (Admin vs Staff), this platform is engineered natively to scale and impress.
-
----
-
-## ✨ Flagship Features
-
-### 🧠 1. Real-Time Groq AI Engine
-- **Demand Forecasting**: Autonomously classifies real-time product health (`Healthy`, `Low Stock`, `Critical`) and calculates future trend trajectory.
-- **Cognitive Recommendations**: Employees can trigger "Smart Restock Requests". The system connects to Groq contextually, analyzes current warehouse state, and suggests mathematically optimal buffer quantities.
-- **Conversational AI Assistant**: A draggable, context-aware chatbot widget floating in the Staff dashboard capable of querying live MongoDB vectors to answer questions like: *"What is our most expensive critical item right now?"*
-
-### 👑 2. Enterprise SaaS Architecture
-- **Role-Based Access Control (RBAC)**: Distinct, isolated experiences.
-  - **Admin**: God-mode. Approve pending staff requests, accept/reject new catalog product proposals, manage Team Roles, and handle raw Data Exports.
-  - **Employee**: Floor-view. Trigger stock consumption, browse catalog, request restocks, and query the Chatbot.
-- **System Settings Hub**: A beautifully tabbed control panel for manipulating Global AI Thresholds, managing user assignments, downloading CSV Ledgers, or triggering simulated Cloud Database Snapshots.
-
-### 🎨 3. Premium UI/UX & WebGL Integration
-- **Live Theme Interface**: Powered by `ogl`, a custom 60fps WebGL `<LightRays />` shader calculates 3D light shafts that pulse and morph behind frosted glass-morphic layers.
-- **Responsive & Animated**: Built natively with Tailwind CSS and `lucide-react` icons. Features smooth `animate-in` transitions across all dynamic routing planes.
+The platform analyzes inventory data in real time and helps businesses predict shortages, optimize restocking, and make smarter operational decisions. Instead of waiting until inventory runs out, SmartStock AI predicts risks and recommends actions automatically.
 
 ---
 
-## 🛠 Tech Stack
+## 🌟 Core Highlights
+- 🤖 **AI‑Powered Inventory Intelligence**
+- 📊 **Real‑Time Inventory Monitoring**
+- 👥 **Role‑Based Dashboards (Admin & Employee)**
+- 📦 **Automated Restock Recommendations**
+- 💬 **Conversational AI Inventory Assistant**
+- ⚡ **Modern High‑Performance UI**
 
-| Layers | Technologies Used |
+---
+
+## 🧠 AI Intelligence Engine
+SmartStock AI integrates the Groq Llama‑3.3 AI model to analyze warehouse data and provide intelligent recommendations.
+
+### 🔮 AI Demand Forecasting
+The system automatically evaluates inventory health:
+
+| Status | Condition |
 | :--- | :--- |
-| **Frontend** | React 18, Vite, Tailwind CSS, React-Router-DOM, Lucide Icons, OGL (WebGL) |
-| **Backend** | Node.js, Express.js |
-| **Database** | MongoDB Atlas (Mongoose ORM) |
-| **Authentication** | JSON Web Tokens (JWT), bcryptjs |
-| **Artificial Intelligence** | Groq API (`llama-3.3-70b-versatile`) |
-| **Infrastructure** | Multer (File Uploads), csv-parser (Data ingestion) |
+| 🟢 **Healthy** | Quantity ≥ 10 |
+| 🟡 **Low Stock** | Quantity < 10 |
+| 🔴 **Critical** | Quantity < 5 |
+
+This allows businesses to detect risks before stockouts occur.
+
+### 📦 Smart Restock Recommendation
+The AI engine suggests optimal restock quantities based on current stock levels.
+
+**Example:**
+- Product: Mouse
+- Current Quantity: 5
+- AI Recommendation: Restock 25 units
+
+This prevents supply shortages and improves operational planning.
+
+### 💬 Conversational Inventory Assistant
+SmartStock AI includes a context‑aware AI chatbot. Users can ask natural questions such as:
+- *“Which products are low in stock?”*
+- *“What should we restock today?”*
+- *“What is the most expensive critical item?”*
+
+The assistant queries live inventory data and returns instant AI‑generated insights.
 
 ---
 
-## 🚀 Quick Start Guide
+## 👥 Role‑Based Access System
+The platform simulates real enterprise workflows through Role‑Based Access Control (RBAC).
 
-Want to spin this up locally? 
+### 👑 Admin Dashboard
+Admins have full control over the system. Capabilities include:
+- Add and manage products
+- Update inventory quantities
+- Approve employee restock requests
+- Monitor AI inventory insights
+- Export inventory data
+- Manage employee roles
 
-### 1. Requirements
-Ensure you have `Node.js` installed and a MongoDB instance (local or Atlas cluster) ready. You will also need a free Groq API key to power the intelligence engine.
+### 👨‍💼 Employee Dashboard
+Employees operate at the warehouse floor level. Capabilities include:
+- View product catalog
+- Monitor stock levels
+- Detect low‑stock items
+- Request restocks
+- Interact with AI assistant
 
-### 2. Backend Initialization
+This creates a collaborative inventory management workflow.
+
+---
+
+## 📊 Smart Dashboard
+The dashboard provides a real‑time overview of system health. Displayed metrics include:
+- Total Products
+- Low Stock Alerts
+- Critical Inventory
+- Total Inventory Value
+- AI Restock Suggestions
+
+This allows managers to instantly assess warehouse status.
+
+---
+
+## 🎨 Modern UI / UX
+SmartStock AI features a modern and responsive interface designed for performance and usability. Highlights:
+- ⚡ **React + Vite** high‑performance frontend
+- 🎨 **TailwindCSS** responsive UI
+- 🌙 **Dark‑mode** optimized design
+- ✨ **Smooth animated transitions**
+- 🧊 **Glass‑morphic UI components**
+
+The interface is designed to resemble modern enterprise SaaS platforms.
+
+---
+
+## 🏗 System Architecture
+SmartStock AI follows a clean full‑stack architecture.
+
+```text
+Frontend (React + Tailwind)
+        │
+        │ REST API
+        ▼
+Backend (Node.js + Express)
+        │
+        │ Database Queries
+        ▼
+MongoDB (Mongoose ORM)
+        │
+        │ AI Analysis
+        ▼
+Groq Llama 3 AI Engine
+```
+This modular architecture ensures scalability and maintainability.
+
+---
+
+## 🛠 Technology Stack
+| Layer | Technologies |
+| :--- | :--- |
+| **Frontend** | React, Vite, TailwindCSS |
+| **Backend** | Node.js, Express.js |
+| **Database** | MongoDB, Mongoose |
+| **Authentication** | JWT, bcrypt |
+| **AI Engine** | Groq API (Llama‑3.3‑70B) |
+| **Tools** | Axios, Lucide Icons |
+
+---
+
+## 🚀 Local Setup
+
+**1️⃣ Clone Repository**
+```bash
+git clone https://github.com/Gnanasai1205/smartstock-ai.git
+cd smartstock-ai
+```
+
+**🗄 Backend Setup**
 ```bash
 cd backend
 npm install
-
-# Create your `.env` file!
-# PORT=5000
-# MONGO_URI=your_mongodb_cluster_url
-# JWT_SECRET=your_secret_key
-# GROQ_API_KEY=your_groq_api_token
-# NODE_ENV=development
-
+```
+Create `.env`
+```env
+PORT=5000
+MONGO_URI=your_mongodb_uri
+JWT_SECRET=your_secret
+GROQ_API_KEY=your_api_key
+```
+Start backend:
+```bash
 npm run dev
 ```
 
-### 3. Frontend Initialization
+**🎨 Frontend Setup**
 ```bash
 cd frontend
 npm install
-
-# Boot the React Application natively on Port 5173
-npm run dev -- --port 5173 --strictPort
+npm run dev
 ```
-
-### 4. Demo Credentials
-Don't want to create an account? The Login screen features quick-fill Demo Buttons:
-- **Admin Access**: `admin@smartsocket.ai` / `password123`
-- **Employee Access**: `employee@smartstock.ai` / `password123`
+- Frontend runs on: `http://localhost:5173`
+- Backend runs on: `http://localhost:5000`
 
 ---
 
-## 📸 Application Gallery
+## 📸 Application Preview
 
-*A masterclass in modern dark-mode aesthetic and data density.*
+### Login Page
+![Login](https://i.ibb.co/6PXZLDB/login.png)
 
-![Login with WebGL Rays](https://raw.githubusercontent.com/Gnanasai1205/smartstock-ai/main/frontend/public/vite.svg) 
-*(Note: Replace this image with a local screenshot of your awesome Login view!)*
+### Dashboard
+![Dashboard](https://i.ibb.co/51J6HBC/dashboard.png)
+
+### Expanded Products
+![Products](https://i.ibb.co/y4L2s8J/products.png)
+
+### Interactive Settings Hub
+![Settings](https://i.ibb.co/3WkL48G/settings.png)
+
+### AI Predictions Engine
+![AI Predictions](https://i.ibb.co/YPXKxR2/predictions.png)
+
+*(Note: These high-fidelity screenshots represent the local live build displaying the WebGL Live Theme and active Llama 3 AI)*
 
 ---
 
-*Built with passion for the Hackathon.* 🚀
+## 🎬 Demo Flow (For Evaluators)
+1. **Login as Admin** 
+2. **Add a new product**
+3. **View real‑time inventory dashboard**
+4. **Update product quantity**
+5. **Detect low‑stock items**
+6. **Trigger AI restock predictions**
+7. **Ask AI assistant about inventory**
+
+---
+
+## 🏆 Hackathon Impact
+SmartStock AI demonstrates:
+- ✔ Full‑Stack System Architecture
+- ✔ AI‑Powered Decision Support
+- ✔ Enterprise Role‑Based Workflow
+- ✔ Real‑World Inventory Simulation
+
+Instead of just tracking products, SmartStock AI enables businesses to:
+**Predict inventory risks, analyze stock health, and make intelligent restocking decisions.**
+
+---
+*Developed during Hackathon by*
+### **Team SmartStock AI**
