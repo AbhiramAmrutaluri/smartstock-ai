@@ -11,9 +11,10 @@ const PORT = process.env.PORT || 5000;
 
 // Middleware Setup
 app.use(cors({
-  origin: ['http://localhost:5173', 'https://smartstock-ai-11u3.vercel.app'],
+  origin: '*', // Allow all origins for hackathon deployment
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'OPTIONS'],
-  allowedHeaders: ['Content-Type', 'Authorization']
+  allowedHeaders: ['Content-Type', 'Authorization'],
+  optionsSuccessStatus: 200
 }));
 app.use(express.json());
 
